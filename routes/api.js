@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const userController = require('./controllers/UserController');
-const thoughtController = require('./controllers/ThoughtController');
+const userController = require('../controllers/UserController');
+const thoughtController = require('../controllers/ThoughtController');
 
 router.get('/users', userController.getAllUsers);
 router.get('/users/:userId', userController.getUserById);
